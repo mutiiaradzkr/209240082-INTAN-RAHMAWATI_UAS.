@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hijab Shop</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk1.html">Produk</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon" id="cartIcon">🛒<span id="cartCount">0</span></div>
+  </header>
+
+
+   <h1>Produk Terbaru</h1>
+<div class="product-grid">
+
+  <article class="product">
+    <h3><a href="#">Kerudung Bergo</a></h3>
+    <img src="images/product1.jpg" alt="Kerudung Bergo" />
+    <p>Hijab instan yang praktis digunakan tanpa perlu penitik atau jarum pentul. Didesain dengan bantalan di dahi, bergo memberikan tampilan rapi dan nyaman untuk dipakai sehari-hari. Cocok untuk gaya santai dan aktivitas.</p>
+    <p>Harga: Rp75.000</p>
+    <button class="add-to-cart" data-product="Kerudung Bergo">Beli</button>
+  </article>
+
+  <article class="product">
+    <h3><a href="#">Kerudung Bella Square</a></h3>
+    <img src="images/product2.jpg" alt="Kerudung Bella Square" />
+    <p>Kerudung segi empat berbahan voal premium, ringan, tidak mudah kusut, dan mudah dibentuk. Memberikan kesan anggun dan stylish.</p>
+    <p>Harga: Rp35.000</p>
+    <button class="add-to-cart" data-product="Kerudung Bella Square">Beli</button>
+  </article>
+
+  <article class="product">
+    <h3><a href="#">Kerudung Pashmina Inner</a></h3>
+    <img src="images/product3.jpg" alt="Kerudung Pashmina Inner" />
+    <p>Pashmina berbahan ceruti atau nar crepe, ringan dan mudah dibentuk. Cocok untuk gaya formal maupun kasual.</p>
+    <p>Harga: Rp70.000</p>
+    <button class="add-to-cart" data-product="Kerudung Pashmina Inner">Beli</button>
+  </article>
+
+  <article class="product">
+    <h3><a href="#">Ciput Rayon</a></h3>
+    <img src="images/product4.jpg" alt="Ciput Rayon" />
+    <p>Daleman hijab berbahan rayon yang lembut, adem, dan menyerap keringat. Nyaman digunakan sehari-hari.</p>
+    <p>Harga: Rp35.000</p>
+    <button class="add-to-cart" data-product="Ciput Rayon">Beli</button>
+  </article>
+
+  <article class="product">
+    <h3><a href="#">Ciput Turki Cepol</a></h3>
+    <img src="images/product5.jpg" alt="Ciput Turki Cepol" />
+    <p>Daleman hijab dengan desain elegan, dilengkapi tali atau model silang di belakang. Stylish dan cocok dipadukan dengan pashmina.</p>
+    <p>Harga: Rp40.000</p>
+    <button class="add-to-cart" data-product="Ciput Turki Cepol">Beli</button>
+  </article>
+
+  <article class="product">
+    <h3><a href="#">Ciput Rajut</a></h3>
+    <img src="images/product6.jpg" alt="Ciput Rajut" />
+    <p>Daleman hijab berbahan rajut elastis, tidak gerah dan cocok sebagai dasar hijab agar rambut tertutup rapi.</p>
+    <p>Harga: Rp30.000</p>
+    <button class="add-to-cart" data-product="Ciput Rajut">Beli</button>
+  </article>
+
+</div>
+
+  <div id="cartModal" class="cart-modal hidden">
+    <h3>Keranjang Anda</h3>
+    <ul id="cartItems"></ul>
+    <button onclick="closeCart()">Tutup</button>
+  </div>
+
+  <div id="notif" class="notification"></div>
+
+  <footer>
+    <p>&copy; 2025 IR Scraft. Kontak: info@irscraft.com | 0812-2005-0606</p>
+  </footer>
+</body>
+</html>

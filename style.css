@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background:rgba(79, 214, 203, 0.59);
+  color: #333;
+}
+
+header {
+  background:rgba(123, 196, 196, 0.57);
+  color: rgb(218, 154, 154);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: rgb(236, 124, 124);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product {
+  background: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(182, 155, 155, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.add-to-cart {
+  background: #1a1b1b;
+  color: rgb(236, 220, 220);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.cart-modal {
+  position: fixed;
+  top: 20%;
+  right: 20px;
+  background: rgb(116, 220, 247);
+  padding: 1rem;
+  border: 1px solid #ddc4c4;
+  box-shadow: 0 4px 10px rgba(148, 85, 85, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.notification {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #60c2b3;
+  color: rgb(245, 116, 116);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(5, 230, 192, 0.15);
+  display: none;
+  z-index: 1000;
+}
+
+footer {
+  background: #7bc4c4;
+  color: rgb(252, 112, 112);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #333;
+}
+
+.product-grid {
+  margin-top: 2rem;
+}
